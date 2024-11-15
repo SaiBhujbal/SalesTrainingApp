@@ -14,7 +14,7 @@ chat_history_table = dynamodb.Table('ChatHistory')
 persona_progress_table = dynamodb.Table('PersonaProgress')
 
 # Define the SageMaker endpoint
-ENDPOINT_NAME = 'jumpstart-dft-hf-llm-nvidia-llama3-20241115-072526'  # Replace with your actual endpoint name
+ENDPOINT_NAME = 'sagemaker-endpoint-name'  # Replace with your actual endpoint name
 
 def lambda_handler(event, context):
     # Extract event details
