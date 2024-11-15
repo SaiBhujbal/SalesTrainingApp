@@ -128,20 +128,413 @@ Allows Lambda functions to invoke SageMaker endpoints.
 ### **Products Table**
 ```json
 {
-  "ProductId": "TravelAgency",
-  "ProductName": "ExploreWorld Package",
-  "Price": 1200,
-  "ProductDescription": "An all-inclusive travel package with accommodation, meals, and guided tours to scenic destinations.",
+  "ProductId": {
+    "S": "TravelAgency"
+  },
+  "Price": {
+    "N": "1200"
+  },
+  "ProductDescription": {
+    "S": "An all-inclusive travel package with accommodation, meals, and guided tours to scenic destinations."
+  },
   "ProductLevels": {
-    "Level1": {
-      "Description": "Basic accommodation with essential amenities for budget-conscious travelers.",
-      "Persona": {
-        "Name": "Neha Banerjee",
-        "PrimaryTrait": "Socially conscious",
-        "Description": "Neha supports brands with a positive social impact."
+    "M": {
+      "Level1": {
+        "M": {
+          "Description": {
+            "S": "Basic accommodation with essential amenities for budget-conscious travelers."
+          },
+          "Persona": {
+            "M": {
+              "Description": {
+                "S": "Neha supports brands with a positive social impact."
+              },
+              "Name": {
+                "S": "Neha Banerjee"
+              },
+              "PrimaryTrait": {
+                "S": "Socially conscious"
+              }
+            }
+          }
+        }
+      },
+      "Level2": {
+        "M": {
+          "Description": {
+            "S": "Comfortable lodging with guided tours and some meal inclusions."
+          },
+          "Persona": {
+            "M": {
+              "Description": {
+                "S": "Ravi seeks the best deals."
+              },
+              "Name": {
+                "S": "Ravi Patel"
+              },
+              "PrimaryTrait": {
+                "S": "Price-sensitive"
+              }
+            }
+          }
+        }
+      },
+      "Level3": {
+        "M": {
+          "Description": {
+            "S": "Premium travel package with better accommodation and more meal options."
+          },
+          "Persona": {
+            "M": {
+              "Description": {
+                "S": "Sara loves trends and frequently makes spontaneous purchases."
+              },
+              "Name": {
+                "S": "Sara Verma"
+              },
+              "PrimaryTrait": {
+                "S": "Impulse buyer"
+              }
+            }
+          }
+        }
+      },
+      "Level4": {
+        "M": {
+          "Description": {
+            "S": "Luxury package with premium accommodation, all meals included, and exclusive tours."
+          },
+          "Persona": {
+            "M": {
+              "Description": {
+                "S": "Akshay thoroughly researches products before buying."
+              },
+              "Name": {
+                "S": "Akshay Mehta"
+              },
+              "PrimaryTrait": {
+                "S": "Research-driven"
+              }
+            }
+          }
+        }
       }
-    },
-    ...
+    }
+  },
+  "ProductName": {
+    "S": "ExploreWorld Package"
+  }
+}
+
+
+
+
+
+{
+  "ProductId": {
+    "S": "Smartphone"
+  },
+  "Price": {
+    "N": "399"
+  },
+  "ProductDescription": {
+    "S": "A smartphone with a 6.1-inch display, 128GB storage, and 4000mAh battery."
+  },
+  "ProductLevels": {
+    "M": {
+      "Level1": {
+        "M": {
+          "Description": {
+            "S": "Basic features for everyday use at an affordable price."
+          },
+          "Persona": {
+            "M": {
+              "Description": {
+                "S": "Sara loves trends and frequently makes spontaneous purchases."
+              },
+              "Name": {
+                "S": "Sara Verma"
+              },
+              "PrimaryTrait": {
+                "S": "Impulse buyer"
+              }
+            }
+          }
+        }
+      },
+      "Level2": {
+        "M": {
+          "Description": {
+            "S": "Improved features with a focus on battery life and camera quality."
+          },
+          "Persona": {
+            "M": {
+              "Description": {
+                "S": "Akshay thoroughly researches products before buying."
+              },
+              "Name": {
+                "S": "Akshay Mehta"
+              },
+              "PrimaryTrait": {
+                "S": "Research-driven"
+              }
+            }
+          }
+        }
+      },
+      "Level3": {
+        "M": {
+          "Description": {
+            "S": "High-end specifications with better durability and brand support."
+          },
+          "Persona": {
+            "M": {
+              "Description": {
+                "S": "Neha prefers brands with a positive social impact."
+              },
+              "Name": {
+                "S": "Neha Banerjee"
+              },
+              "PrimaryTrait": {
+                "S": "Socially conscious"
+              }
+            }
+          }
+        }
+      },
+      "Level4": {
+        "M": {
+          "Description": {
+            "S": "Top-tier specifications with exclusive features and premium customer support."
+          },
+          "Persona": {
+            "M": {
+              "Description": {
+                "S": "Ravi looks for the best deals and carefully compares prices."
+              },
+              "Name": {
+                "S": "Ravi Patel"
+              },
+              "PrimaryTrait": {
+                "S": "Price-sensitive"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "ProductName": {
+    "S": "TechPlus X5"
+  }
+}
+
+
+
+
+
+
+{
+  "ProductId": {
+    "S": "Sneakers"
+  },
+  "Price": {
+    "N": "90"
+  },
+  "ProductDescription": {
+    "S": "Durable and stylish sneakers with excellent arch support for daily wear."
+  },
+  "ProductLevels": {
+    "M": {
+      "Level1": {
+        "M": {
+          "Description": {
+            "S": "Affordable, durable sneakers for occasional wear."
+          },
+          "Persona": {
+            "M": {
+              "Description": {
+                "S": "Ravi seeks the best deals."
+              },
+              "Name": {
+                "S": "Ravi Patel"
+              },
+              "PrimaryTrait": {
+                "S": "Price-sensitive"
+              }
+            }
+          }
+        }
+      },
+      "Level2": {
+        "M": {
+          "Description": {
+            "S": "Enhanced comfort and support for regular use."
+          },
+          "Persona": {
+            "M": {
+              "Description": {
+                "S": "Sara loves trends and frequently makes spontaneous purchases."
+              },
+              "Name": {
+                "S": "Sara Verma"
+              },
+              "PrimaryTrait": {
+                "S": "Impulse buyer"
+              }
+            }
+          }
+        }
+      },
+      "Level3": {
+        "M": {
+          "Description": {
+            "S": "High-quality materials for long-lasting daily use."
+          },
+          "Persona": {
+            "M": {
+              "Description": {
+                "S": "Akshay thoroughly researches products before buying."
+              },
+              "Name": {
+                "S": "Akshay Mehta"
+              },
+              "PrimaryTrait": {
+                "S": "Research-driven"
+              }
+            }
+          }
+        }
+      },
+      "Level4": {
+        "M": {
+          "Description": {
+            "S": "Premium design with maximum durability and comfort."
+          },
+          "Persona": {
+            "M": {
+              "Description": {
+                "S": "Neha supports brands with a positive social impact."
+              },
+              "Name": {
+                "S": "Neha Banerjee"
+              },
+              "PrimaryTrait": {
+                "S": "Socially conscious"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "ProductName": {
+    "S": "ComfortStride"
+  }
+}
+
+
+
+
+
+
+
+{
+  "ProductId": {
+    "S": "FinancialAdvisor"
+  },
+  "Price": {
+    "N": "40"
+  },
+  "ProductDescription": {
+    "S": "A financial advisory service offering personalized investment and tax planning."
+  },
+  "ProductLevels": {
+    "M": {
+      "Level1": {
+        "M": {
+          "Description": {
+            "S": "Basic financial advice for budgeting and saving."
+          },
+          "Persona": {
+            "M": {
+              "Description": {
+                "S": "Akshay thoroughly researches products before buying."
+              },
+              "Name": {
+                "S": "Akshay Mehta"
+              },
+              "PrimaryTrait": {
+                "S": "Research-driven"
+              }
+            }
+          }
+        }
+      },
+      "Level2": {
+        "M": {
+          "Description": {
+            "S": "Comprehensive investment planning with quarterly check-ins."
+          },
+          "Persona": {
+            "M": {
+              "Description": {
+                "S": "Neha supports brands with a positive social impact."
+              },
+              "Name": {
+                "S": "Neha Banerjee"
+              },
+              "PrimaryTrait": {
+                "S": "Socially conscious"
+              }
+            }
+          }
+        }
+      },
+      "Level3": {
+        "M": {
+          "Description": {
+            "S": "Advanced financial strategies with personalized tax planning."
+          },
+          "Persona": {
+            "M": {
+              "Description": {
+                "S": "Ravi seeks the best deals and compares prices carefully."
+              },
+              "Name": {
+                "S": "Ravi Patel"
+              },
+              "PrimaryTrait": {
+                "S": "Price-sensitive"
+              }
+            }
+          }
+        }
+      },
+      "Level4": {
+        "M": {
+          "Description": {
+            "S": "Exclusive wealth management with priority support and tailored investment plans."
+          },
+          "Persona": {
+            "M": {
+              "Description": {
+                "S": "Sara loves trends and frequently makes spontaneous purchases."
+              },
+              "Name": {
+                "S": "Sara Verma"
+              },
+              "PrimaryTrait": {
+                "S": "Impulse buyer"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "ProductName": {
+    "S": "SmartInvest Advisory"
   }
 }
 ```
