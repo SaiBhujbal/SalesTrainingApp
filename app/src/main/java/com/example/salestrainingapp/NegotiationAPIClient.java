@@ -20,7 +20,7 @@ import java.util.*;
 import com.example.salestrainingapp.model.Empty;
 
 
-@com.amazonaws.mobileconnectors.apigateway.annotation.Service(endpoint = "https://csll5x3zsl.execute-api.us-east-1.amazonaws.com/prod")
+@com.amazonaws.mobileconnectors.apigateway.annotation.Service(endpoint = "api-gateway-deployed-stage-invoke-url")
 public interface NegotiationAPIClient {
 
 
