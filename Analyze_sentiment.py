@@ -7,7 +7,7 @@ dynamodb = boto3.resource('dynamodb')
 sagemaker_runtime = boto3.client('sagemaker-runtime')
 
 # Define the SageMaker endpoint
-ENDPOINT_NAME = 'jumpstart-dft-hf-llm-nvidia-llama3-20241115-072526'  # Replace with your actual endpoint name
+ENDPOINT_NAME = 'sagemaker-endpoint-name'  # Replace with your actual endpoint name
 
 def lambda_handler(event, context):
     ai_response = event.get("ai_response", "")
